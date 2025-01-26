@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function SearchMeals() {
-  const [meal, setMeal] = useState(null);
+  const [meals, setMeals] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = async (e) => {
@@ -10,7 +10,7 @@ function SearchMeals() {
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
     );
     const data = await response.json();
-    setMeal(data.meals?.[0]);
+    setMeals(data.meals); //Store all meals
   };
 
   return (
@@ -21,19 +21,27 @@ function SearchMeals() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search meals"
-          className ="search-input"
+          className="search-input"
         />
-        <button type="submit" className="search-button"> Search Meals </button>
+        <button type="submit"> Search Meals </button>
       </form>
 
-      {meal && (
-        <div className="meal-card">
-          <h2>{meal.strMeal}</h2>
-          <img src={meal.strMealThumb} alt={meal.strMeal} />
-          <p>Category: {meal.strCategory}</p>
-          <p>Area: {meal.strArea}</p>
-        </div>
-      )}
+      <div className="meal-grid">
+        {meals.map((meal) => (
+          <div key={meal.idMeal} className="meal-card">
+            <h2>{meal.strMeal}</h2>
+            <img
+              src={meal.strMealThumb}
+              alt={meal.strMeal}
+              
+            />
+            <div className="meal-info">
+              <p>Category: {meal.strCategory}</p>
+              <p>Area: {meal.strArea}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
