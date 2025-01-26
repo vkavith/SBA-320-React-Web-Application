@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-Built with CSS, JavaScript, REACT
+Built with CSS, JavaScript, REACT \n
 FETCH request used for API
 themealdb.com external API used to get "Meals Search" and "Meals by Area"
 Simplified site to get Meals by Country. 
