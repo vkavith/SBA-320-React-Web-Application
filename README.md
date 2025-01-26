@@ -17,3 +17,6 @@ themealdb.com external API used to get "Meals Search" and "Meals by Area"
 Simplified site to get Meals by Country. 
 
 Unsolved problem - "Meals Search" - Dish image shown. The images are not shown entirely. Have to fix this. Rest everything is good.
+
+Render deployment
+https://mealsreactwebapp.onrender.com
