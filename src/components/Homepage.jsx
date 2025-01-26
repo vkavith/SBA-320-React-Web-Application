@@ -6,6 +6,7 @@ function Homepage() {
   return (
     <div className="button-container">
       <button onClick={() => navigate("/search")}>Meals Search</button>
+      <button onClick={() => navigate("/area")}>Meals by Area</button>
     </div>
   );
 }

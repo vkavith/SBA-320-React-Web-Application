@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/search" element={<SearchMeals />} />
+        <Route path="/area" element={<MealsByArea />} />
       </Routes>
     </BrowserRouter>
   );
