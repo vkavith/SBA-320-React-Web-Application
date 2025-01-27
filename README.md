@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 + Built with CSS, JavaScript, REACT
-+ 
+ 
 + Used React Router
 
 + FETCH request used for API
