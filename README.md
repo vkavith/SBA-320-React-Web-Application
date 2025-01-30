@@ -16,7 +16,11 @@ Currently, two official plugins are available:
 
 + themealdb.com external API used to get "Meals Search" and "Meals by Area"
 
-+ Simplified site to get Meals by Country Specific. 
++ Meals Search - Used API for this
+
++ Meals By Area - used API for this
+
++ Simplified site to get Meals by Country(Meals by Area) Specific. 
 
 Unsolved problem - Render deployment failed. Checked Log, couldn't deploy. Followed Dylan's video.
 
