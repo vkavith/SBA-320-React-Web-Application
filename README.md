@@ -46,9 +46,9 @@ Currently, two official plugins are available:
 
 + themealdb.com external API used to get "Meals Search" and "Meals by Area" 
 
-+ Meals Search - Used API for this. Click button Meals Search.
++ Meals Search - Used API for this.  Enter keyword like "Chicken", "Fish", "Beef", "soup","noodle" in the Search. Click button Meals Search.
 
-+ Meals By Area - used API for this. Click button "Meals By Area"
++ Meals By Area - used API for this. Choose a Country from the list, Click button "Meals By Area"
 
 
 Unsolved problem - Render deployment failed. Checked Log, couldn't deploy. Followed Dylan's video.
