@@ -18,7 +18,6 @@ function SearchMeals() {
 
   return (
     <div>
-      {/* Search form with input and submit button */}
       <form onSubmit={handleSubmit} className="search-form">
         <input
           type="text"
@@ -30,7 +29,6 @@ function SearchMeals() {
         <button type="submit"> Search Meals </button>
       </form>
       
-      {/* Grid to display search results */}
       <div className="meal-grid">
         {meals.map((meal) => (
           <div key={meal.idMeal} className="meal-card">
