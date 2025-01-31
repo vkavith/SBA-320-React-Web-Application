@@ -1,20 +1,24 @@
 import { useState } from "react";
 
+// Component for searching meals using TheMealDB API
 function SearchMeals() {
+  // State to store search results
   const [meals, setMeals] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Fetch meals from API based on search Meals keyword
     const response = await fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
     );
     const data = await response.json();
-    setMeals(data.meals); //Store all meals
+    setMeals(data.meals); // Update meals state with search results
   };
 
   return (
     <div>
+      {/* Search form with input and submit button */}
       <form onSubmit={handleSubmit} className="search-form">
         <input
           type="text"
@@ -25,7 +29,8 @@ function SearchMeals() {
         />
         <button type="submit"> Search Meals </button>
       </form>
-
+      
+      {/* Grid to display search results */}
       <div className="meal-grid">
         {meals.map((meal) => (
           <div key={meal.idMeal} className="meal-card">
