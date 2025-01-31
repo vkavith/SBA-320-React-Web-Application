@@ -46,7 +46,7 @@ function MealsByArea() {
         ))}
       </select>
 
-      {/* Grid to display meals */}
+      
       <div className="meals-grid">
         {meals.map((meal) => (
           <div key={meal.idMeal} className="meal-card">
